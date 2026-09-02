@@ -166,10 +166,6 @@ function Home() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-[360px] w-[360px] rounded-full border border-[#b8cdb4]/20" />
         <div className="relative mx-auto grid min-h-[690px] max-w-[1240px] items-center gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[1.1fr_.9fr] lg:gap-20 lg:px-10 lg:py-28">
           <div>
-            <div className="reveal mb-8 flex items-center gap-3 text-[#b8cdb4]">
-              <span className="h-px w-10 bg-[#b8cdb4]" />
-              <span className="font-mono text-[10px] uppercase tracking-[0.23em]">A university AI healthcare concept</span>
-            </div>
             <h1 id="hero-title" className="reveal reveal-delay-1 max-w-[760px] text-[clamp(3.7rem,8vw,7.5rem)] leading-[.86] tracking-[-0.065em]">
               Know earlier.
               <span className="font-display mt-3 block text-[#d8b7be]">Act at the right time.</span>
@@ -408,13 +404,13 @@ function Home() {
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <SectionEyebrow>08 / The team</SectionEyebrow>
-              <h2 className="mt-7 text-[clamp(2.7rem,5vw,5rem)] leading-[.94] tracking-[-.06em]">A thoughtful idea is a team sport.</h2>
+              <h2 className="mt-7 text-[clamp(2.7rem,5vw,5rem)] leading-[.94] tracking-[-.06em]">Built through shared research, innovation, and purpose.</h2>
             </div>
           </div>
           <div className="mt-14 grid gap-4 sm:grid-cols-2">
             {teamMembers.map((member, index) => (
               <article key={member.name} data-testid={`card-team-member-${index + 1}`} className="card-lift rounded-[24px] border border-[#372f48]/15 bg-[#ede9e1] p-6">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#8a6c77]/35 font-display text-2xl text-[#8a6c77]">ب</div>
+                <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#8a6c77]/35 font-display text-2xl text-[#8a6c77]" aria-hidden="true" />
                 <h3 className="mt-12 text-lg font-semibold">{member.name}</h3>
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[.16em] text-[#8a6c77]">{member.role}</p>
                 <p className="mt-5 text-sm font-medium leading-6 text-[#5e5362]">{member.discipline}</p>
@@ -448,7 +444,7 @@ function Home() {
               <h2 className="mt-7 max-w-[760px] text-[clamp(3rem,7vw,7rem)] leading-[.85] tracking-[-.07em]">Earlier awareness.<span className="font-display block pt-3 text-[#d8b7be]">Better conversations.</span><span className="block pt-3">At the right time.</span></h2>
             </div>
             <div className="lg:pt-8">
-              <p className="text-[17px] leading-7 text-[#d0c8d0]">Student AI Healthcare Project</p>
+              <p className="text-[17px] leading-7 text-[#d0c8d0]">AI Healthcare Project</p>
               <p className="mt-2 text-[15px] leading-7 text-[#b8cdb4]">Effat University · 2026</p>
             </div>
           </div>
