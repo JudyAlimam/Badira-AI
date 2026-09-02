@@ -1,0 +1,125 @@
+Keep the current Badira website design and existing content exactly as they are except for the specific edits listed below.
+
+IMPORTANT:
+- Do NOT redesign the website.
+- Do NOT change the existing color palette.
+- Do NOT change the overall typography system except for the Badira wordmark specifically requested below.
+- Do NOT change the section order.
+- Do NOT change the current layout style, animations, spacing, or overall visual identity unless necessary to accommodate the requested text.
+- Do NOT add an assessment form.
+- Do NOT add an interactive prototype.
+- Do NOT add fake AI results.
+- Do NOT add unsupported medical claims.
+- Do NOT rewrite sections that are not specifically mentioned below.
+- Preserve the existing Risk × Reliability × Time section.
+- Preserve the existing medical disclaimer.
+
+Make ONLY the following targeted edits:
+
+1. BADIRA WORDMARK / NAVIGATION
+
+Keep the existing circular Badira logo.
+
+Improve the typography of the “Badira | بادرة” wordmark displayed next to the circular logo.
+
+Use a more polished, modern, premium font treatment for both the English “Badira” and Arabic “بادرة”.
+
+Make sure the Arabic text renders correctly and elegantly and visually balances with the English name.
+
+Keep:
+Badira | بادرة
+
+Do not replace or redesign the circular logo itself.
+
+2. HOW IT WORKS — “ADD WHAT YOU KNOW”
+
+Keep the current How It Works section and its existing visual design.
+
+For the “Add what you know” step, change ONLY the description to:
+
+“Share relevant medical history, previous pregnancies, family history, symptoms, and any available health measurements or clinical information.”
+
+Keep the rest of the section unchanged.
+
+3. AI-POWERED AWARENESS FEATURE
+
+Keep the existing feature card title:
+“AI-powered awareness”
+
+Change ONLY its description to:
+
+“Uses a multi-model AI approach to analyze maternal health and pregnancy-related information and support personalized screening priority.”
+
+Do not add specific model architectures or unsupported technical details.
+
+4. WHO IT IS FOR — MAIN TEXT
+
+Keep the existing heading:
+
+“Built for pregnant women seeking clearer early awareness.”
+
+Replace the sentence currently underneath the section title with:
+
+“Supporting pregnant women with clearer, more accessible awareness of preeclampsia risk.”
+
+Keep the existing main paragraph describing pregnant women as the primary target users.
+
+5. WHO IT IS FOR — SECONDARY USERS
+
+Under the existing primary-user content, add a smaller secondary-user block:
+
+“For healthcare professionals”
+
+“Badira can also support healthcare professionals by providing a structured summary of the information and risk factors identified by the user before or during a consultation.”
+
+Pregnant women must remain visually and conceptually the PRIMARY users.
+
+Healthcare professionals should clearly appear as a secondary audience.
+
+6. TEAM SECTION HEADING
+
+Replace:
+
+“A thoughtful idea is a team sport.”
+
+with:
+
+“Built through shared research, innovation, and purpose.”
+
+Keep the existing Team section design.
+
+7. TEAM CARDS
+
+Replace the two placeholder team cards with exactly:
+
+Judy Al Imam
+Founder
+Computer Science — Artificial Intelligence
+Creator of Badira, contributing to its research, AI concept, and development.
+
+Dana Al Mounayer
+Co-Founder
+Computer Science — Artificial Intelligence
+Co-creator of Badira, contributing to its research, AI concept, and development.
+
+Remove ALL placeholder wording such as:
+“Team Member”
+“Role”
+“Placeholder — edited later”
+or any similar unfinished placeholder text.
+
+Keep the two cards visually consistent and equal in design.
+
+8. REMOVE STRAY ARABIC CHARACTER
+
+There is a stray Arabic letter “ب” appearing underneath/around the Project section before the Team section.
+
+Remove this stray character completely.
+
+Make sure removing it does not affect the legitimate Arabic word “بادرة” used in the Badira branding elsewhere on the website.
+
+FINAL CHECK:
+
+After making these edits, do not make any other creative changes or rewrites.
+
+The goal is to preserve the current website and only correct these specific content and presentation details.

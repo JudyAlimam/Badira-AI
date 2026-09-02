@@ -45,7 +45,7 @@ const riskPillars = [
 
 const steps = [
   { number: '01', title: 'Tell Badira about your pregnancy', detail: 'Provide your gestational week and basic pregnancy context.' },
-  { number: '02', title: 'Add what you know', detail: 'Share relevant medical history, previous pregnancies, family history and available measurements.' },
+  { number: '02', title: 'Add what you know', detail: 'Share relevant medical history, previous pregnancies, family history, symptoms, and any available health measurements or clinical information.' },
   { number: '03', title: 'AI evaluates the information', detail: 'Badira considers potential risk while also evaluating the completeness and reliability of the available information.' },
   { number: '04', title: 'Understand Risk × Reliability × Time', detail: 'Receive a clear explanation of screening priority, reliability and timing.' },
   { number: '05', title: 'Share a concise summary', detail: 'Organize the provided information into a concise summary that can support a conversation with a healthcare professional.' },
@@ -53,11 +53,26 @@ const steps = [
 
 const features = [
   { title: 'Arabic + English', detail: 'Information should meet people in the language they think in.', icon: Languages },
-  { title: 'AI-powered awareness', detail: 'Support for earlier recognition, not an automated diagnosis.', icon: BrainCircuit },
+  { title: 'AI-powered awareness', detail: 'Uses a multi-model AI approach to analyze maternal health and pregnancy-related information and support personalized screening priority.', icon: BrainCircuit },
   { title: 'Reliability-aware', detail: 'Makes room for what is missing, uncertain or inconsistent.', icon: ShieldCheck },
   { title: 'Time-aware', detail: 'Puts pregnancy stage alongside the information available.', icon: Clock3 },
   { title: 'Explainable results', detail: 'Turns a black box into a starting point for questions.', icon: FileText },
   { title: 'Shareable summary', detail: 'A simple handoff for a more informed clinical conversation.', icon: Share2 },
+];
+
+const teamMembers = [
+  {
+    name: 'Judy Al Imam',
+    role: 'Founder',
+    discipline: 'Computer Science — Artificial Intelligence',
+    detail: 'Creator of Badira, contributing to its research, AI concept, and development.',
+  },
+  {
+    name: 'Dana Al Mounayer',
+    role: 'Co-Founder',
+    discipline: 'Computer Science — Artificial Intelligence',
+    detail: 'Co-creator of Badira, contributing to its research, AI concept, and development.',
+  },
 ];
 
 function Brand({ light = false }: { light?: boolean }) {
@@ -72,8 +87,8 @@ function Brand({ light = false }: { light?: boolean }) {
         <span className="absolute h-5 w-5 rounded-full border border-current/45" />
       </span>
       <span className="leading-none">
-        <span className="block text-[15px] font-semibold tracking-[-0.02em]">Badira</span>
-        <span className="mt-1 block text-[12px] font-medium opacity-70" dir="rtl">بادرة</span>
+        <span className="wordmark-english block text-[18px] leading-none">Badira</span>
+        <span className="wordmark-arabic mt-1 block text-[12px] opacity-75" dir="rtl">بادرة</span>
       </span>
     </a>
   );
@@ -357,11 +372,16 @@ function Home() {
         <div className="mx-auto grid max-w-[1240px] gap-16 lg:grid-cols-2 lg:gap-28">
           <div>
             <SectionEyebrow>06 / Who it is for</SectionEyebrow>
-            <h2 className="mt-7 text-[clamp(2.7rem,5vw,5rem)] leading-[.93] tracking-[-.06em]">For the person who wants to arrive at care with better questions.</h2>
+              <h2 className="mt-7 text-[clamp(2.7rem,5vw,5rem)] leading-[.93] tracking-[-.06em]">Built for pregnant women seeking clearer early awareness.</h2>
           </div>
           <div className="flex flex-col justify-end">
             <div className="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-[#e9d4d8] text-[#8a6c77]"><UsersRound size={28} strokeWidth={1.4} /></div>
-            <p className="text-[20px] leading-8 tracking-[-.025em] text-[#5e5362]">Pregnant women seeking a simple and accessible way to understand whether their pregnancy and health information may warrant earlier professional assessment for preeclampsia.</p>
+            <p className="text-[17px] leading-7 text-[#766c78]">Supporting pregnant women with clearer, more accessible awareness of preeclampsia risk.</p>
+            <p className="mt-6 text-[20px] leading-8 tracking-[-.025em] text-[#5e5362]">Pregnant women seeking a simple and accessible way to understand whether their pregnancy and health information may warrant earlier professional assessment for preeclampsia.</p>
+            <div className="mt-10 border-l-2 border-[#b8cdb4] pl-5">
+              <div className="font-mono text-[10px] font-bold uppercase tracking-[.17em] text-[#637660]">For healthcare professionals</div>
+              <p className="mt-3 max-w-[560px] text-sm leading-6 text-[#6a606e]">Badira can also support healthcare professionals by providing a structured summary of the information and risk factors identified by the user before or during a consultation.</p>
+            </div>
             <div className="mt-10 section-rule" />
             <div className="mt-5 flex items-center gap-3 font-mono text-[10px] uppercase tracking-[.17em] text-[#8a6c77]"><CircleCheck size={14} /> Designed for understanding, not alarm</div>
           </div>
@@ -373,7 +393,6 @@ function Home() {
           <div className="grid gap-12 lg:grid-cols-[.7fr_1.3fr] lg:gap-28">
             <div>
               <SectionEyebrow>07 / About the project</SectionEyebrow>
-              <div className="mt-8 font-display text-7xl leading-none text-[#637660]/35">ب</div>
             </div>
             <div>
               <h2 className="max-w-[780px] text-[clamp(2.4rem,4.5vw,4.7rem)] leading-[.96] tracking-[-.055em]">Trustworthy AI should feel like a handrail, not a wall.</h2>
@@ -393,11 +412,14 @@ function Home() {
             </div>
           </div>
           <div className="mt-14 grid gap-4 sm:grid-cols-2">
-            {[1, 2].map((member) => (
-              <article key={member} data-testid={`card-team-member-${member}`} className="card-lift rounded-[24px] border border-[#372f48]/15 bg-[#ede9e1] p-6">
+            {teamMembers.map((member, index) => (
+              <article key={member.name} data-testid={`card-team-member-${index + 1}`} className="card-lift rounded-[24px] border border-[#372f48]/15 bg-[#ede9e1] p-6">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#8a6c77]/35 font-display text-2xl text-[#8a6c77]">ب</div>
-                <h3 className="mt-12 text-lg font-semibold">Team Member</h3>
-                <p className="mt-1 font-mono text-[10px] uppercase tracking-[.16em] text-[#8a6c77]">Role</p>
+                <h3 className="mt-12 text-lg font-semibold">{member.name}</h3>
+                <p className="mt-1 font-mono text-[10px] uppercase tracking-[.16em] text-[#8a6c77]">{member.role}</p>
+                <p className="mt-5 text-sm font-medium leading-6 text-[#5e5362]">{member.discipline}</p>
+                <div className="mt-7 h-px bg-[#372f48]/10" />
+                <p className="mt-4 text-xs leading-5 text-[#766c78]">{member.detail}</p>
               </article>
             ))}
           </div>

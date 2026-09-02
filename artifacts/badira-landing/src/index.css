@@ -395,6 +395,20 @@ a {
   font-family: var(--app-font-serif);
 }
 
+.wordmark-english {
+  font-family: var(--app-font-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.wordmark-arabic {
+  font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
 .font-mono {
   font-family: var(--app-font-mono);
 }
