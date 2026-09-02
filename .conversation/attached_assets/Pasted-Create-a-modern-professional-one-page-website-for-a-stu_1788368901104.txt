@@ -1,0 +1,86 @@
+Create a modern, professional one-page website for a student AI healthcare project called “Badira | بادرة”.
+
+Badira is an AI Early Awareness Companion for Preeclampsia. The website is a project landing page for a university AI hackathon, not the actual clinical application.
+
+Build it as a responsive website that works well on desktop and mobile.
+
+The page should contain these sections in this order:
+
+1. Navbar with “Badira | بادرة” and links to About, How It Works, Features, Team, and Contact.
+
+2. Hero section:
+- Badira | بادرة
+- “An AI Early Awareness Companion for Preeclampsia”
+- Main tagline: “Know earlier. Act at the right time.”
+- Highlight the concept: “Risk × Reliability × Time”
+- A “Learn How It Works” button that scrolls to the How It Works section.
+
+3. The Problem:
+Explain that preeclampsia is a serious pregnancy complication where early risk identification matters, but women may not always recognize when their medical history, pregnancy factors, or available measurements suggest a need for earlier professional assessment.
+Highlight: “The challenge is not only identifying risk — it is recognizing it early enough to act.”
+
+4. The Solution:
+Introduce Badira as a bilingual, mobile-first AI companion designed to support early awareness of preeclampsia. Explain that it uses information a woman can readily provide, such as gestational week, medical history, previous pregnancies, family history, and available measurements.
+
+5. Risk × Reliability × Time:
+Create three visually prominent cards:
+- Risk: What does the available information suggest?
+- Reliability: How reliable is the assessment based on the completeness and consistency of the available information?
+- Time: Based on gestational stage, how promptly may professional assessment be appropriate?
+
+6. How It Works:
+Show four steps:
+- Tell Badira about your pregnancy
+- Add what you know
+- AI evaluates the information
+- Understand the result
+
+7. Key Features:
+Include six feature cards:
+- Arabic + English
+- AI-Powered Awareness
+- Reliability-Aware
+- Time-Aware
+- Explainable Results
+- Shareable Summary
+
+8. Who It Is For:
+Pregnant women seeking a simple and accessible way to understand whether their pregnancy and health information may warrant earlier professional assessment for preeclampsia.
+
+9. About the Project:
+Explain that Badira grew from research exploring trustworthy AI in women’s health and was transformed into a focused hackathon concept for accessible early preeclampsia awareness.
+
+10. Team section:
+Create placeholder cards for team members. Do not invent names or roles. Use “Team Member” and “Role” placeholders that can be edited later.
+
+11. Medical disclaimer:
+Make this clearly visible:
+“Badira is not a diagnostic or treatment system and does not replace professional medical care.”
+Explain that it supports early awareness and informed conversations with healthcare professionals and does not provide diagnosis or replace clinical screening.
+
+12. Contact / footer:
+Include “Earlier awareness. Better conversations. At the right time.”
+Include Badira | بادرة and “Risk × Reliability × Time”.
+Use placeholder contact information for now.
+
+DESIGN:
+Use a sophisticated women’s-health + technology aesthetic, not a generic hospital website and not a childish pregnancy website.
+
+Use:
+- warm off-white backgrounds
+- deep plum as the primary color
+- muted dusty rose accents
+- subtle sage accents
+- dark charcoal text
+
+The design should feel calm, trustworthy, premium, modern, and medically responsible.
+
+Use elegant typography, generous whitespace, rounded cards, subtle shadows, simple healthcare/technology-inspired graphics or abstract shapes, and tasteful animations.
+
+Do not make the website overly pink.
+Do not use cliché baby graphics.
+Do not make unsupported medical claims.
+Do not create a working risk assessment or fake AI prediction.
+This is currently a landing page presenting the Badira concept.
+
+Make the website visually impressive enough for an AI university hackathon while remaining clean and professional.

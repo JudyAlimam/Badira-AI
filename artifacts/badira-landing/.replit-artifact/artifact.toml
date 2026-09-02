@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Badira | بادرة"
+description = "A polished one-page landing site for Badira, a bilingual AI early-awareness companion concept for preeclampsia created for a university healthcare hackathon."
+version = "1.0.0"
+id = "artifacts/badira-landing"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24699
+
+[services.development]
+run = "pnpm --filter @workspace/badira-landing run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/badira-landing", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/badira-landing/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24699"
+BASE_PATH = "/"
