@@ -1,0 +1,125 @@
+Keep the current website's visual design, color palette, typography, layout style, animations, spacing, and overall aesthetic. I like the design and do NOT want a redesign.
+
+Only make the following content and structure refinements:
+
+1. HERO
+Keep:
+“Know earlier. Act at the right time.”
+
+Change the supporting description to:
+“Badira is an AI Early Awareness Companion for Preeclampsia — designed to help pregnant women recognize when their pregnancy and health information may warrant earlier professional assessment.”
+
+Keep the Risk × Reliability × Time concept.
+
+2. PROBLEM
+Keep the current section structure and main idea.
+Make sure it clearly communicates:
+“Preeclampsia is a serious pregnancy complication where early risk identification matters. However, pregnant women may not always recognize when their medical history, pregnancy factors, or available measurements suggest a need for earlier professional assessment.”
+
+Keep the highlighted statement:
+“The challenge is not only identifying risk — it is recognizing it early enough to act.”
+
+3. SOLUTION
+Change the large heading from:
+“A little more clarity, at a meaningful moment.”
+
+to:
+“Early awareness, built around the information you have.”
+
+Keep the existing explanation of Badira as a bilingual, mobile-first AI companion.
+
+4. RISK × RELIABILITY × TIME
+Keep the current visual design exactly.
+
+Use:
+
+Risk
+“What does the available information suggest?”
+“Badira considers available pregnancy and health information to estimate screening priority.”
+
+Reliability
+“How reliable is the assessment?”
+“Badira considers the completeness and consistency of the available information and communicates when important information is missing.”
+
+Time
+“When might professional assessment be appropriate?”
+“Badira considers gestational stage when communicating how promptly professional assessment may be needed.”
+
+5. HOW IT WORKS
+Change the large heading to:
+“From your information to a clearer next step.”
+
+Use five steps instead of four:
+
+01 — Tell Badira about your pregnancy
+Provide your gestational week and basic pregnancy context.
+
+02 — Add what you know
+Share relevant medical history, previous pregnancies, family history and available measurements.
+
+03 — AI evaluates the information
+Badira considers potential risk while also evaluating the completeness and reliability of the available information.
+
+04 — Understand Risk × Reliability × Time
+Receive a clear explanation of screening priority, reliability and timing.
+
+05 — Share a concise summary
+Organize the provided information into a concise summary that can support a conversation with a healthcare professional.
+
+6. FEATURES
+Change the large section heading from:
+“Useful details, not noisy features.”
+
+to:
+“Designed around clarity and trust.”
+
+Keep the six existing feature cards:
+Arabic + English
+AI-powered awareness
+Reliability-aware
+Time-aware
+Explainable results
+Shareable summary
+
+7. WHO IT IS FOR
+Keep the target specifically as pregnant women.
+
+8. ABOUT PROJECT
+Keep the heading:
+“Trustworthy AI should feel like a handrail, not a wall.”
+
+Replace the main project description with:
+“Badira grew from our exploration of trustworthy AI in women’s health. For the hackathon, we transformed that research direction into a focused concept centered on one goal: helping women recognize potential preeclampsia risk earlier and connect with professional care at the right time.”
+
+9. TEAM
+Keep the visual card design but do not show four placeholder team members.
+For now create TWO team cards only.
+Keep editable placeholders for name and role.
+Remove all text saying “Placeholder — edited later” and remove “details to be added after the presentation.”
+
+10. DISCLAIMER
+Keep the current disclaimer section and visual treatment.
+Keep:
+“Badira is not a diagnostic or treatment system and does not replace professional medical care.”
+
+11. CONTACT
+Remove the fake email “hello@badira.example”.
+Do not replace it with another fake email.
+For now show:
+“Student AI Healthcare Project”
+“Effat University · 2026”
+
+12. FOOTER
+Change:
+“HACKATHON CONCEPT · 2024”
+
+to:
+“UNIVERSITIES CHALLENGE · 2026”
+
+IMPORTANT:
+Do not redesign the website.
+Do not change the existing visual identity.
+Do not add an assessment form.
+Do not add fake AI results.
+Do not add unsupported medical claims.
+Only implement the requested content and structural refinements.

@@ -21,15 +21,15 @@ const riskPillars = [
     number: '01',
     title: 'Risk',
     question: 'What does the available information suggest?',
-    detail: 'A clearer view of the factors that may matter — without reducing a person to a score.',
+    detail: 'Badira considers available pregnancy and health information to estimate screening priority.',
     icon: Activity,
     color: 'bg-[#e9d4d8]',
   },
   {
     number: '02',
     title: 'Reliability',
-    question: 'How much can we trust the picture?',
-    detail: 'An assessment is only as useful as the completeness and consistency of what informs it.',
+    question: 'How reliable is the assessment?',
+    detail: 'Badira considers the completeness and consistency of the available information and communicates when important information is missing.',
     icon: ShieldCheck,
     color: 'bg-[#d9e2d6]',
   },
@@ -37,17 +37,18 @@ const riskPillars = [
     number: '03',
     title: 'Time',
     question: 'When might professional assessment be appropriate?',
-    detail: 'Gestational stage gives context to urgency, helping awareness become a timely next step.',
+    detail: 'Badira considers gestational stage when communicating how promptly professional assessment may be needed.',
     icon: Clock3,
     color: 'bg-[#e8dfc9]',
   },
 ];
 
 const steps = [
-  { number: '01', title: 'Tell Badira about your pregnancy', detail: 'Start with the context that makes the rest meaningful.' },
-  { number: '02', title: 'Add what you know', detail: 'Share medical history, previous pregnancies and available measurements.' },
-  { number: '03', title: 'AI evaluates the information', detail: 'The concept weighs risk, reliability and time together.' },
-  { number: '04', title: 'Understand the result', detail: 'Receive an explainable summary to support your next conversation.' },
+  { number: '01', title: 'Tell Badira about your pregnancy', detail: 'Provide your gestational week and basic pregnancy context.' },
+  { number: '02', title: 'Add what you know', detail: 'Share relevant medical history, previous pregnancies, family history and available measurements.' },
+  { number: '03', title: 'AI evaluates the information', detail: 'Badira considers potential risk while also evaluating the completeness and reliability of the available information.' },
+  { number: '04', title: 'Understand Risk × Reliability × Time', detail: 'Receive a clear explanation of screening priority, reliability and timing.' },
+  { number: '05', title: 'Share a concise summary', detail: 'Organize the provided information into a concise summary that can support a conversation with a healthcare professional.' },
 ];
 
 const features = [
@@ -159,7 +160,7 @@ function Home() {
               <span className="font-display mt-3 block text-[#d8b7be]">Act at the right time.</span>
             </h1>
             <p className="reveal reveal-delay-2 mt-9 max-w-[540px] text-[17px] leading-7 text-[#ddd7db] sm:text-[19px]">
-              Badira is an AI Early Awareness Companion for Preeclampsia — built to help people recognize when pregnancy and health information may warrant earlier professional assessment.
+              Badira is an AI Early Awareness Companion for Preeclampsia — designed to help pregnant women recognize when their pregnancy and health information may warrant earlier professional assessment.
             </p>
             <div className="reveal reveal-delay-3 mt-10 flex flex-wrap items-center gap-4">
               <a
@@ -225,7 +226,7 @@ function Home() {
                 Early recognition can change the conversation.
               </h2>
               <p className="mt-8 max-w-[690px] text-[18px] leading-8 text-[#655c69]">
-                Preeclampsia is a serious pregnancy complication where early risk identification matters. But women may not always recognize when their medical history, pregnancy factors, or available measurements suggest a need for earlier professional assessment.
+                Preeclampsia is a serious pregnancy complication where early risk identification matters. However, pregnant women may not always recognize when their medical history, pregnancy factors, or available measurements suggest a need for earlier professional assessment.
               </p>
               <blockquote className="mt-12 border-l-2 border-[#b88e9b] pl-6 text-[24px] leading-[1.18] tracking-[-.025em] text-[#8a6c77] sm:text-[30px]">
                 “The challenge is not only identifying risk — it is recognizing it early enough to act.”
@@ -241,7 +242,7 @@ function Home() {
             <div>
               <SectionEyebrow>02 / The solution</SectionEyebrow>
               <h2 className="mt-7 max-w-[720px] text-[clamp(2.5rem,5vw,5.2rem)] leading-[.94] tracking-[-.055em]">
-                A little more clarity, at a meaningful moment.
+                Early awareness, built around the information you have.
               </h2>
             </div>
             <div className="lg:pb-2">
@@ -300,7 +301,7 @@ function Home() {
           <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr] lg:gap-24">
             <div>
               <SectionEyebrow>04 / How it works</SectionEyebrow>
-              <h2 className="mt-7 max-w-[390px] text-[clamp(2.7rem,5vw,5.2rem)] leading-[.93] tracking-[-.06em]">From what you know to what you can ask.</h2>
+              <h2 className="mt-7 max-w-[390px] text-[clamp(2.7rem,5vw,5.2rem)] leading-[.93] tracking-[-.06em]">From your information to a clearer next step.</h2>
               <p className="mt-8 max-w-[360px] text-[16px] leading-7 text-[#6a606e]">A simple sequence for organizing information — and making room for a better-informed next step.</p>
             </div>
             <div className="divide-y divide-[#372f48]/15 border-y border-[#372f48]/15">
@@ -333,7 +334,7 @@ function Home() {
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
               <SectionEyebrow>05 / What makes it considered</SectionEyebrow>
-              <h2 className="mt-7 max-w-[580px] text-[clamp(2.7rem,5vw,5rem)] leading-[.94] tracking-[-.06em]">Useful details, not noisy features.</h2>
+              <h2 className="mt-7 max-w-[580px] text-[clamp(2.7rem,5vw,5rem)] leading-[.94] tracking-[-.06em]">Designed around clarity and trust.</h2>
             </div>
             <p className="max-w-[280px] text-sm leading-6 text-[#766c78]">Every part of the concept is there to make awareness more accessible, understandable or timely.</p>
           </div>
@@ -376,7 +377,7 @@ function Home() {
             </div>
             <div>
               <h2 className="max-w-[780px] text-[clamp(2.4rem,4.5vw,4.7rem)] leading-[.96] tracking-[-.055em]">Trustworthy AI should feel like a handrail, not a wall.</h2>
-              <p className="mt-8 max-w-[700px] text-[17px] leading-8 text-[#536252]">Badira grew from research exploring trustworthy AI in women’s health and was transformed into a focused hackathon concept for accessible early preeclampsia awareness.</p>
+              <p className="mt-8 max-w-[700px] text-[17px] leading-8 text-[#536252]">Badira grew from our exploration of trustworthy AI in women’s health. For the hackathon, we transformed that research direction into a focused concept centered on one goal: helping women recognize potential preeclampsia risk earlier and connect with professional care at the right time.</p>
               <p className="mt-5 max-w-[700px] text-[17px] leading-8 text-[#536252]">We are interested in the space between a person noticing something and knowing what to do next — with care, context and humility built into the experience.</p>
             </div>
           </div>
@@ -390,16 +391,13 @@ function Home() {
               <SectionEyebrow>08 / The team</SectionEyebrow>
               <h2 className="mt-7 text-[clamp(2.7rem,5vw,5rem)] leading-[.94] tracking-[-.06em]">A thoughtful idea is a team sport.</h2>
             </div>
-            <p className="max-w-[280px] text-sm leading-6 text-[#766c78]">The people behind Badira — details to be added after the presentation.</p>
           </div>
-          <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {[1, 2, 3, 4].map((member) => (
+          <div className="mt-14 grid gap-4 sm:grid-cols-2">
+            {[1, 2].map((member) => (
               <article key={member} data-testid={`card-team-member-${member}`} className="card-lift rounded-[24px] border border-[#372f48]/15 bg-[#ede9e1] p-6">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#8a6c77]/35 font-display text-2xl text-[#8a6c77]">ب</div>
                 <h3 className="mt-12 text-lg font-semibold">Team Member</h3>
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-[.16em] text-[#8a6c77]">Role</p>
-                <div className="mt-7 h-px bg-[#372f48]/10" />
-                <p className="mt-4 text-xs leading-5 text-[#766c78]">Placeholder — edited later.</p>
               </article>
             ))}
           </div>
@@ -428,15 +426,15 @@ function Home() {
               <h2 className="mt-7 max-w-[760px] text-[clamp(3rem,7vw,7rem)] leading-[.85] tracking-[-.07em]">Earlier awareness.<span className="font-display block pt-3 text-[#d8b7be]">Better conversations.</span><span className="block pt-3">At the right time.</span></h2>
             </div>
             <div className="lg:pt-8">
-              <p className="text-[17px] leading-7 text-[#d0c8d0]">Want to hear more about the concept or meet the team? Contact details can be added here after the hackathon.</p>
-              <a href="mailto:hello@badira.example" data-testid="link-contact-email" className="link-arrow mt-8 inline-flex items-center gap-3 border-b border-[#b8cdb4]/50 pb-2 text-sm font-semibold text-[#b8cdb4]">hello@badira.example <ArrowUpRight size={16} /></a>
+              <p className="text-[17px] leading-7 text-[#d0c8d0]">Student AI Healthcare Project</p>
+              <p className="mt-2 text-[15px] leading-7 text-[#b8cdb4]">Effat University · 2026</p>
             </div>
           </div>
           <div className="mt-24 border-t border-[#f7f4ef]/15 pt-6">
             <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-center">
               <Brand light />
               <div className="font-display text-lg italic text-[#d8b7be]">Risk <span className="font-sans not-italic text-xs">×</span> Reliability <span className="font-sans not-italic text-xs">×</span> Time</div>
-              <div className="font-mono text-[9px] uppercase tracking-[.15em] text-[#a89da9]">Hackathon concept · 2024</div>
+              <div className="font-mono text-[9px] uppercase tracking-[.15em] text-[#a89da9]">Universities challenge · 2026</div>
             </div>
             <p className="mt-8 text-[11px] leading-5 text-[#a89da9]">For concept presentation only. Badira is not a diagnostic or treatment system.</p>
           </div>
